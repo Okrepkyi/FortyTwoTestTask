@@ -6,6 +6,6 @@ def person_view(request):
 
     data = PersonModel.objects.get(pk=1)
     context = {
-    	"context_data": data,
+    	"person_data": data,
     }
-    return render(request, 'hello/home.html', context)
+    return render(request, 'home.html', context)

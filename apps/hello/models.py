@@ -5,7 +5,7 @@ class PersonModel(models.Model):
 
 	name = models.CharField(max_length=20)
 	surname = models.CharField(max_length=20)
-	date = models.DateField()
+	date = models.DateField(verbose_name="Date of birth")
 	bio = models.CharField(max_length=300)
 	jabber = models.CharField(max_length=20)
 	email = models.EmailField(max_length=50)
