@@ -11,3 +11,6 @@ class PersonModel(models.Model):
 	email = models.EmailField(max_length=50)
 	skype = models.CharField(max_length=50)
 	other = models.CharField(max_length=300)
+
+	def __str__(self):
+		return self.name
