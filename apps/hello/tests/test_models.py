@@ -4,8 +4,8 @@ from apps.hello.models import PersonModel
 
 class PersonModelTest(TestCase):
 
-    def create_person_model(self, name="Ababagalamaga", 
-    						surname="Agamalagababa", 
+    def create_person_model(self, name="Ababagalamag", 
+    						surname="Agamalagabab", 
     						date="1987-10-22", 
     						bio="", 
     						jabber="",
