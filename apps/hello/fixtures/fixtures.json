@@ -1,0 +1,24 @@
+[
+  {
+    "model": "hello.personmodel",
+    "pk": 1,
+    "fields": {
+      "name": "Oleksandr",
+      "surname": "Okrepkyi",
+      "date": "1987-10-22",
+      "bio": "Geologist / Future Python developer",
+      "jabber": "Moveton",
+      "email": "okrepkyj@gmail.com",
+      "skype": "kre.kre.",
+      "other": "Linkedin - Oleksandr Okrepkyi",
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "password": "admin",
+    }
+  }
+]
