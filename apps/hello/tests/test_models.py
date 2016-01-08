@@ -12,6 +12,7 @@ class PersonModelTest(TestCase):
     						email="",
     						skype="",
     						other=""):
+    
         return PersonModel.objects.create(name=name, 
         									surname=surname, 
         									date=date, bio=bio, 
