@@ -22,5 +22,5 @@ class HttpRequests(models.Model):
 	method = models.CharField(max_length=10)
 	uri = models.CharField(max_length=100)
 	protocol = models.CharField(max_length=10)
-	status_code = models.IntegerField(max_length=3)
-	content_length = models.IntegerField(max_length=10)
+	status_code = models.IntegerField()
+	content_length = models.IntegerField()
