@@ -14,3 +14,13 @@ class PersonModel(models.Model):
 
 	def __str__(self):
 		return self.name
+
+
+class HttpRequests(models.Model):
+
+	date_time = models.DateTimeField(auto_now=False, auto_now_add=True)
+	method = models.CharField(max_length=10)
+	uri = models.CharField(max_length=100)
+	protocol = models.CharField(max_length=10)
+	status_code = models.IntegerField(max_length=3)
+	content_length = models.IntegerField(max_length=10)
