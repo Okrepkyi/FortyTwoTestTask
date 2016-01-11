@@ -1,12 +1,14 @@
-from models import HttpRequests
+from .models import Request
 
 
-class HttpRequestsMiddleware(object):
+class FirstMiddleware(object):
 
-	def requests_middleware(self, request, response):
-		request_data = HttpRequests(method=request.META["REQUEST_METHOD"],
-									uri=request.path,
-									protocol=request.META["SERVER_PROTOCOL"],
-									status_code=response.status_code,
-									content_length=len(response.content))
+	def process_response(self, request, response):		
+		data = Request(request_method=request.META['REQUEST_METHOD'],
+						uri=request.path,
+						server_protocol=request.META['SERVER_PROTOCOL'],
+						status_code = response.status_code,
+						content_length=len(response.content)
+						)
 		data.save()
+		return response

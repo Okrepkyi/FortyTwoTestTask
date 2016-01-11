@@ -16,11 +16,14 @@ class PersonModel(models.Model):
 		return self.name
 
 
-class HttpRequests(models.Model):
+class Request(models.Model):
 
 	date_time = models.DateTimeField(auto_now=False, auto_now_add=True)
-	method = models.CharField(max_length=10)
-	uri = models.CharField(max_length=100)
-	protocol = models.CharField(max_length=10)
+	request_method = models.CharField(max_length=10)
+	uri = models.CharField(max_length=10)
+	server_protocol = models.CharField(max_length=10)
 	status_code = models.IntegerField()
 	content_length = models.IntegerField()
+
+	class Meta:
+		ordering = ['date_time']

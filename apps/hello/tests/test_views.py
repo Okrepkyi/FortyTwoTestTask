@@ -4,7 +4,7 @@ from django.test import TestCase
 
 class FirstViewTest(TestCase):
 
-	def test_index_value_limit(self):
+	def test_ticket1_view(self):
 		PersonModel.objects.create(name='Oleksandr',
 									surname='Okrepkyi',
 									date='1987-10-22',

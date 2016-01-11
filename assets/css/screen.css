@@ -3,7 +3,10 @@ h1 {
 }
 
 table {
-    border-collapse: collapse;
+	border-collapse: collapse;
+	width:70%; 
+	margin-left:15%; 
+	margin-right:15%;
 }
 
 tr:nth-child(even){
@@ -15,12 +18,12 @@ tr:hover {
 }
 
 th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #1E90FF;
-    color: white;
+	background-color: #1E90FF;
+	color: white;
 }

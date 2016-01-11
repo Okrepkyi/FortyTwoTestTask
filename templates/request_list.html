@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Requests page</title>
+    <link rel="stylesheet" href="{% static 'css/screen.css' %}">
+</head>
+
+
+<body>
+
+    <h1>Requests list</h1>
+
+    <table>    
+        <tr>
+            <th>#</th>
+            <th>Date&Time</th>
+            <th>Method</th>
+            <th>URI</th>
+            <th>Server protocol</th>
+            <th>Status code</th>
+            <th>Content length</th>
+        </tr>
+    {% for request in request_list %}
+        <tr>
+            <td>{{ forloop.counter }}.</td>
+            <td>{{ request.date_time }}</td>
+            <td>{{ request.request_method }}</td>
+            <td>{{ request.uri }}</td>
+            <td>{{ request.server_protocol }}</td>
+            <td>{{ request.status_code }}</td>
+            <td>{{ request.content_length }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+</body>
+
+
+</html>

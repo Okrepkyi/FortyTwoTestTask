@@ -8,6 +8,7 @@ urlpatterns = patterns(
     # url(r'^$', 'fortytwo_test_task.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^$', 'apps.hello.views.person_view', name='person_view'),
-    url(r'^admin/', include(admin.site.urls)),
+	url(r'^$', 'apps.hello.views.person_view', name='person_view'),
+	url(r'^admin/', include(admin.site.urls)),
+	url(r'^request_list/', 'apps.hello.views.view_requests', name='view_requests'),
 )

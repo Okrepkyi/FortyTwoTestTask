@@ -1,6 +1,8 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
+
+
 <head>
     <title>Person Page</title>
     <link rel="stylesheet" href="{% static 'css/screen.css' %}">
@@ -11,31 +13,33 @@
 
     <h1>42 Coffee Cups Test Assignment</h1>
 
-    <table align="center">
-
+    <table>
         <tr>
             <th>Personal information</th>
             <th>Contacts</th>
         </tr>
         <tr>
-            <td>Name: {{ person_data.name }}</td>
-            <td>Jabber: {{ person_data.jabber }}</td>
+            <td>Name: {{ data.name }}</td>
+            <td>Jabber: {{ data.jabber }}</td>
         </tr>
         <tr>
-            <td>Surname: {{ person_data.surname }}</td>
-            <td>Email: {{ person_data.email }}</td>
+            <td>Surname: {{ data.surname }}</td>
+            <td>Email: {{ data.email }}</td>
         </tr>
         <tr>
-            <td>Date of birth: {{ person_data.date }}</td>
-            <td>Skype: {{ person_data.skype }}</td>
+            <td>Date of birth: {{ data.date }}</td>
+            <td>Skype: {{ data.skype }}</td>
         </tr>
         <tr>
-            <td>Bio: {{ person_data.bio }}</td>
-            <td>Other: {{ person_data.other }}</td>
+            <td>Bio: {{ data.bio }}</td>
+            <td>Other: {{ data.other }}</td>
         </tr>
-
     </table>
-    
+
+    <hr>
+
+    <h3><a href="request_list/">Last requests</a></h3>
+
 </body>
 
 
