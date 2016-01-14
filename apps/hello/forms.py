@@ -6,3 +6,4 @@ class PersonForm(forms.ModelForm):
 
 	class Meta:
 		model = PersonModel
+		fields = '__all__'

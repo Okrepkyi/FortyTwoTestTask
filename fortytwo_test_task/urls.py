@@ -10,5 +10,7 @@ urlpatterns = patterns(
 
 	url(r'^$', 'apps.hello.views.person_view', name='person_view'),
 	url(r'^admin/', include(admin.site.urls)),
-	url(r'^request_list/', 'apps.hello.views.view_requests', name='view_requests'),
+	url(r'^login/$', 'apps.hello.views.login', name='login'),
+	url(r'^logout/$', 'apps.hello.views.logout', name='logout'),
+	url(r'^request_list/$', 'apps.hello.views.view_requests', name='view_requests'),
 )

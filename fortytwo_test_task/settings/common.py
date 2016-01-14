@@ -43,7 +43,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     # Third party apps
-
+    'south',
 
     # Local apps
     'apps.hello',
